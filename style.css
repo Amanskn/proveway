@@ -1,0 +1,150 @@
+body {
+  background-color: rgb(37, 36, 36);
+  color: wheat;
+}
+
+.font10 {
+  font-size: 10px;
+}
+.font12 {
+  font-size: 12px;
+}
+.font14 {
+  font-size: 14px;
+}
+.custom-theme {
+  background-color: #ff6b82;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+/* css for container at level 1 */
+#container-at-level-1 {
+  background-color: #ffffff;
+  /* border: 2px solid red; */
+  width: 462px;
+  height: 603px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* css for all divs at level 2 */
+.container-at-level-2 {
+  /* border: 2px solid grey; */
+  margin-left: 59px;
+  margin-right: 59px;
+}
+
+/* css for 1st div at level2 */
+#div1 {
+  width: 343px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  /* text-align: center; */
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ff6b82;
+  /* border: 0.9px solid #c8c8c8; */
+  margin-top: 39px;
+}
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #ddd;
+  margin: 0 10px; /* Adjust the spacing between the lines and the text */
+}
+#div2 {
+  /* text-align: center; */
+  width: 341px;
+  height: 363.11px;
+  color: #000000;
+  /* border: 0.9px solid #c8c8c8; */
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#div2 > div {
+  height: 74.11px;
+  border: 0.9px solid grey;
+  /* margin: 5px 0; */
+}
+#div2 > div:hover {
+  /* height: 74.11px; */
+  border: 2px solid #ff6b82;
+  cursor: pointer;
+  /* margin: 5px 0; */
+}
+#div2 > div:nth-child(2) {
+  height: 174.11px;
+}
+
+/* css for unit-and-price-container */
+.unit-and-price-container {
+  /* border: 2px solid red; */
+  display: flex;
+}
+.unit-container {
+  /* border: 4px solid green; */
+  width: 50%;
+}
+.price-container {
+  /* border: 6px solid goldenrod; */
+  width: 50%;
+  text-align: end;
+}
+
+.weight400 {
+  font-weight: 400;
+}
+.weight500 {
+  font-weight: 500;
+}
+.weight600 {
+  font-weight: 600;
+}
+.off {
+  padding: 1px 3px;
+}
+
+#div3,
+#div4 {
+  width: 342px;
+  height: 40px;
+  margin-top: 5px;
+  /* border: none; */
+}
+
+#div3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* first direct child */
+#div3 > span:first-child {
+  color: red;
+}
+
+/* second direct child */
+#div3 > span:nth-child(2) {
+  color: black;
+}
+
+/* css for the button inside div4 at level2 */
+#div4 > button {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#div5 {
+  display: flex;
+  justify-content: flex-end;
+  color: grey;
+}
