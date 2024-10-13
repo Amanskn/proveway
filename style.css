@@ -12,6 +12,16 @@ body {
 .font14 {
   font-size: 14px;
 }
+
+.weight400 {
+  font-weight: 400;
+}
+.weight500 {
+  font-weight: 500;
+}
+.weight600 {
+  font-weight: 600;
+}
 .custom-theme {
   background-color: #ff6b82;
   color: #ffffff;
@@ -29,6 +39,8 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
+/* done with css for container at level1 */
 
 /* css for all divs at level 2 */
 .container-at-level-2 {
@@ -57,6 +69,8 @@ body {
   background-color: #ddd;
   margin: 0 10px; /* Adjust the spacing between the lines and the text */
 }
+
+/* css for div at level 2 */
 #div2 {
   /* text-align: center; */
   width: 341px;
@@ -68,8 +82,12 @@ body {
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  box-sizing: border-box;
+  /* padding-bottom: 40px; */
 }
+
+/* css for all three child div of #div2 */
 #div2 > div {
   height: 74.11px;
   border: 0.9px solid grey;
@@ -79,38 +97,54 @@ body {
   /* height: 74.11px; */
   border: 2px solid #ff6b82;
   cursor: pointer;
+  height: 174.11px;
+  background-color: #e7dfe0;
   /* margin: 5px 0; */
 }
 #div2 > div:nth-child(2) {
-  height: 174.11px;
+  /* height: 174.11px; */
 }
 
 /* css for unit-and-price-container */
 .unit-and-price-container {
   /* border: 2px solid red; */
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
 }
 .unit-container {
   /* border: 4px solid green; */
-  width: 50%;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
 }
-.price-container {
-  /* border: 6px solid goldenrod; */
-  width: 50%;
-  text-align: end;
+.unit-container > div {
+  /* border: 2px solid red; */
 }
 
-.weight400 {
-  font-weight: 400;
+.price-container {
+  /* border: 6px solid goldenrod; */
+  width: 30%;
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
-.weight500 {
-  font-weight: 500;
-}
-.weight600 {
-  font-weight: 600;
-}
+
 .off {
   padding: 1px 3px;
+}
+
+.size-and-color-container {
+  /* border: 4px solid purple; */
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+  display: none;
+}
+#div2 > div:hover .size-and-color-container {
+  display: flex; /* or block depending on layout needs */
 }
 
 #div3,
@@ -141,10 +175,32 @@ body {
   width: 100%;
   height: 100%;
   border: none;
+  cursor: pointer;
 }
 
 #div5 {
   display: flex;
   justify-content: flex-end;
   color: grey;
+}
+.select-wrapper1,
+.select-wrapper2 {
+  /* Ensures the select and content are inline */
+  position: relative; /* Allows for positioning the ::before element */
+}
+.select-wrapper1::before {
+  content: "#1";
+  position: absolute;
+  left: -15px;
+  top: 40%;
+  font-size: 10px;
+  font-weight: 400;
+}
+.select-wrapper2::before {
+  content: "#2";
+  position: absolute;
+  left: -15px;
+  top: 40%;
+  font-size: 10px;
+  font-weight: 400;
 }
